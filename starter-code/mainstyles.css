@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+:root {
+    --blue: #345ff6;
+    --gunmetal: #253347;
+    --darkElectricBlue: #5E6E85;
+    --borders: #D8E2E7;
+    --pureWhite: #ffffff;
+}
+  
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype"); 
+}
+
+:root {
+    --my-font-sizeXL: 64px;
+    --my-font-family: "Hanken Grotesk", inter semibold;
+    --my-line-heightHeading: 110%;
+    --my-font-color: var(--gunmetal);   
+    --my-font-headingXL: var(--my-font-sizeXL) var(--my-font-family) var(--my-line-heightHeading);
+
+    --my-font-sizeL: 48px;
+    --my-font-headingL: var(--my-font-sizeL) var(--my-font-family) var(--my-line-heightHeading);
+
+    --my-font-sizeM: 24px;
+    --my-font-headingM: var(--my-font-sizeM) var(--my-font-family) var(--my-line-heightHeading);
+
+    --my-font-sizeS: 20px;
+    --my-font-headingS: var(--my-font-sizeS) var(--my-font-family) var(--my-line-heightHeading);
+
+    --my-font-sizebodyM: 16px;
+    --my-line-body: 150%;
+    --my-font-bodyM: var(--my-font-sizebodyM) var(--my-font-family) var(--my-line-body);
+
+    --my-font-sizebodyS: 14px;
+    --my-font-bodyM: var(--my-font-sizebodyS) var(--my-font-family) var(--my-line-body);
+  }
+
+
+/* Default monile styles */
+
+.div {
+    background-color: red;
+}
+
+
+@media (min-width: 768px) {
+    .div {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+    .div {
+        background-color: yellow;
+    }
+}
+

@@ -5,34 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" type="text/css" href="mainstyles.css">
   
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 <body>
+  <main>
+    <div id="head">
+      <div class="definitionContainer">
+        <img src="assets/images/logo.svg" alt="SVG Image"> 
+        <h1>Body Mass Index Calculator</h1> 
+        <p>Better understand your weight in relation to your height using our 
+          body mass index (BM) calculator. While BMI is not the sole determinant 
+          of a healthy weight, it offers a valuable starting point to evaluate 
+          your overall health and well-being.</p>
+      </div>
+      <div class="calculatorContainer">
+        <h3>
+          Enter your details below
+        </h3>
+        <div class="meticsystemContainer">
+          <div class="metricInput">
+            <input type="checkbox" name="yes">
+            <p>Metric</p>
+          </div>
+          <div class="imperialInput">
+            <input type="checkbox" name="yes">
+            <p>Imperial</p>
+          </div>
+        </div>
+        <div class="parameters">
+          <div class="heightInput">
+            <p>Height</p>
+            <input type="text" name="name">
+          </div>
+          <div class="weightInput">
+            <p>Weight</p>
+            <input type="text" name="name">
+          </div>
+        </div>
+        <div class="result">
+          <div class="resultContainer">
+            <p>
+              Your BMI is...
+            </p>
+            <p id="BMI">
+              0
+            </p>
+          </div>
+          <p>
+            Your BMI suggests you're add classification. Your ideal weight is between add range
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Body Mass Index Calculator
+  <!-- 
 
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
+  
 
-  Enter your details below
+  add score
 
-  Metric
-  Imperial
+  Your BMI suggests you're add classification. 
+  Your ideal weight is between  add range -->.
 
-  Height
-  Weight
-
-  Your BMI is...
-
-  <!-- add score -->
-
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
-
-  What your BMI result means
+  <!-- What your BMI result means
 
   A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
   healthy weight may lower your chances of experiencing health issues later on, 
@@ -79,7 +118,7 @@
   Race
   Certain health concerns may affect individuals of some Black and Asian origins at 
   lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse.
+  GP or practice nurse. --> 
 
 </body>
 </html>
