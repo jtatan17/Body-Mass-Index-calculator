@@ -14,9 +14,9 @@
   <main>
     <div id="head">
       <div class="definitionContainer">
-        <img src="assets/images/logo.svg" alt="SVG Image"> 
+        <img src="assets/images/logo.svg" alt="SVG Image" id="logoHead"> 
         <h1>Body Mass Index Calculator</h1> 
-        <p>Better understand your weight in relation to your height using our 
+        <p class="bodyM">Better understand your weight in relation to your height using our 
           body mass index (BM) calculator. While BMI is not the sole determinant 
           of a healthy weight, it offers a valuable starting point to evaluate 
           your overall health and well-being.</p>
@@ -27,12 +27,12 @@
         </h3>
         <div class="meticsystemContainer">
           <div class="metricInput">
-            <input type="checkbox" name="yes">
-            <p>Metric</p>
+            <input type="radio" name="yes" id="metricInputCircle">
+            <label>Metric</label>
           </div>
           <div class="imperialInput">
-            <input type="checkbox" name="yes">
-            <p>Imperial</p>
+            <input type="radio" name="yes" id="imperialInputCircle">
+            <label>Imperial</label>
           </div>
         </div>
         <div class="parameters">

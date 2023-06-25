@@ -18,38 +18,148 @@
     src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype"); 
 }
 
-:root {
-    --my-font-sizeXL: 64px;
-    --my-font-family: "Hanken Grotesk", inter semibold;
-    --my-line-heightHeading: 110%;
-    --my-font-color: var(--gunmetal);   
-    --my-font-headingXL: var(--my-font-sizeXL) var(--my-font-family) var(--my-line-heightHeading);
+h1 {
+    font-size: 64px;
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -3.2px;
+    color: var(--gunmetal);
 
-    --my-font-sizeL: 48px;
-    --my-font-headingL: var(--my-font-sizeL) var(--my-font-family) var(--my-line-heightHeading);
-
-    --my-font-sizeM: 24px;
-    --my-font-headingM: var(--my-font-sizeM) var(--my-font-family) var(--my-line-heightHeading);
-
-    --my-font-sizeS: 20px;
-    --my-font-headingS: var(--my-font-sizeS) var(--my-font-family) var(--my-line-heightHeading);
-
-    --my-font-sizebodyM: 16px;
-    --my-line-body: 150%;
-    --my-font-bodyM: var(--my-font-sizebodyM) var(--my-font-family) var(--my-line-body);
-
-    --my-font-sizebodyS: 14px;
-    --my-font-bodyM: var(--my-font-sizebodyS) var(--my-font-family) var(--my-line-body);
-  }
-
-
-/* Default monile styles */
-
-.div {
-    background-color: red;
 }
 
+h2 {
+    font-size: 48px;
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -2.4px;
+    color: var(--gunmetal);
 
+}
+
+h3{
+    font-size: 24px;
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    color: var(--gunmetal);
+
+}
+
+h4 {
+    font-size: 20px;
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--gunmetal);
+
+}
+
+.bodyM {
+    font-size: 16px;
+    font-family: "Hanken Grotesk";
+    line-height: 150%;
+    color: var(--gunmetal);
+
+}
+
+.bodyMBold {
+    font-size: 16px;
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--gunmetal);
+
+}
+
+.bodyS {
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 150%;
+    color: var(--gunmetal);
+}
+
+/* Default mobile styles */
+#logoHead {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin: 24px;
+}
+
+.definitionContainer {
+    background: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
+    border-radius: 0px 0px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.definitionContainer p{
+    align-self: stretch;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    color: #5E6E85;
+    height: 640px;
+    align-self: stretch;
+    ;
+
+}
+
+.definitionContainer h1{
+    text-align: center;
+    align-self: stretch;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.calculatorContainer {
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 16px;
+    background: var(--pure-white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}   
+
+.meticsystemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#metricInputCircle{
+    width: 31px;
+    height: 31px;
+    border-radius: 31px;
+    border: 1px solid;
+    background: var(--pure-white);
+}
+
+#imperialInputCircle {
+    width: 31px;
+    height: 31px;
+    border-radius: 31px;
+    border: 1px solid;
+    background: var(--pure-white);
+}
 @media (min-width: 768px) {
     .div {
         background-color: blue;
