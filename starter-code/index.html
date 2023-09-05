@@ -1,68 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" type="text/css" href="mainstyles.css">
-  
-  <title>Frontend Mentor | Body Mass Index Calculator</title>
-</head>
-<body>
-  <main>
-    <div id="head">
-      <div class="definitionContainer">
-        <img src="assets/images/logo.svg" alt="SVG Image" id="logoHead"> 
-        <h1>Body Mass Index Calculator</h1> 
-        <p class="bodyM">Better understand your weight in relation to your height using our 
-          body mass index (BM) calculator. While BMI is not the sole determinant 
-          of a healthy weight, it offers a valuable starting point to evaluate 
-          your overall health and well-being.</p>
-      </div>
-      <div class="calculatorContainer">
-        <h3>
-          Enter your details below
-        </h3>
-        <div class="metricsystemContainer">
-          <div class="toggleContainerMetric">
-            <input type="radio" name="yes" id="metricInputCircle">
-            <label>Metric</label>
-          </div>
-          <div class="toggleContainerImperial">
-            <input type="radio" name="yes" id="imperialInputCircle">
-            <label>Imperial</label>
-          </div>
-        </div>
-        <div class="parameters">
-          <div class="heightInput">
-            <p>Height</p>
-            <input type="text" name="name">
-          </div>
-          <div class="weightInput">
-            <p>Weight</p>
-            <input type="text" name="name">
-          </div>
-        </div>
-        <div class="result">
-          <div class="resultContainer">
-            <p>
-              Your BMI is...
-            </p>
-            <p id="BMI">
-              0
-            </p>
-          </div>
-          <p>
-            Your BMI suggests you're add classification. Your ideal weight is between add range
+    <link rel="stylesheet" type="text/css" href="mainstyles.css" />
+
+    <title>Frontend Mentor | Body Mass Index Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div id="head">
+        <div class="definitionContainer">
+          <img src="assets/images/logo.svg" alt="SVG Image" id="logoHead" />
+          <h1>Body Mass Index Calculator</h1>
+          <p class="bodyM">
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
           </p>
         </div>
-      </div>
-    </div>
-  </main>
+        <div class="calculatorContainer">
+          <h3>Enter your details below</h3>
 
-  <!-- 
+          <div class="metricsystemContainer">
+            <div class="toggleContainerMetric">
+              <div class="circleContainer" id="metricCircleContainer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                >
+                  <circle
+                    class="metricCircleOuter"
+                    cx="15.5"
+                    cy="15.5"
+                    r="15"
+                    fill="white"
+                    stroke="#D8E2E7"
+                  />
+                  <circle
+                    class="metricCircleInner"
+                    cx="15.5"
+                    cy="15.5"
+                    r="7.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <label for="metricRadio">Metric</label>
+            </div>
+            <div class="toggleContainerImperial">
+              <div class="circleContainer" id="imperialCircleContainer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                >
+                  <circle
+                    class="imperialCircleOuter"
+                    cx="15.5"
+                    cy="15.5"
+                    r="15"
+                    fill="white"
+                    stroke="#D8E2E7"
+                  />
+                  <circle
+                    class="imperialCircleInner"
+                    cx="15.5"
+                    cy="15.5"
+                    r="7.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <label for="imperialRadio">Imperial</label>
+            </div>
+          </div>
+
+          <div class="parameters">
+            <div class="heightInput">
+              <p>Height</p>
+              <div class="inputContainer">
+               <input type="text" name="name" id="HeightInputElement" />
+               <span class="blueTextCM ">cm</span>
+              </div>
+            </div>
+            <div class="weightInput">
+              <p>Weight</p>
+              <div class="inputContainer">
+               <input type="text" name="name" id="WeightInputElement" />
+               <span class="blueTextKG">kg</span>
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <div class="resultContainer">
+              <p>Your BMI is...</p>
+              <p id="BMI">23.4</p>
+              <p id="resultParagraph">
+                Your BMI suggests you're a healthy weight. Your ideal weight is between <span>63.3kgs - 85.2kgs</span>.
+              </p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 
 
   
 
@@ -71,7 +128,7 @@
   Your BMI suggests you're add classification. 
   Your ideal weight is between  add range -->.
 
-  <!-- What your BMI result means
+    <!-- What your BMI result means
 
   A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
   healthy weight may lower your chances of experiencing health issues later on, 
@@ -118,7 +175,7 @@
   Race
   Certain health concerns may affect individuals of some Black and Asian origins at 
   lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse. --> 
-
-</body>
+  GP or practice nurse. -->
+    <script src="main.js"></script>
+  </body>
 </html>
