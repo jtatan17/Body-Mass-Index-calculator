@@ -89,20 +89,39 @@
               <label for="imperialRadio">Imperial</label>
             </div>
           </div>
-
-          <div class="parameters">
+          <div class="parametersMetric">
             <div class="heightInput">
               <p>Height</p>
               <div class="inputContainer">
-               <input type="text" name="name" id="HeightInputElement" />
-               <span class="blueTextCM ">cm</span>
+               <input type="text" name="name" id="HeightInputElement" placeholder="0"/>
+               <span class="blueText ">cm</span>
               </div>
             </div>
             <div class="weightInput">
               <p>Weight</p>
               <div class="inputContainer">
-               <input type="text" name="name" id="WeightInputElement" />
-               <span class="blueTextKG">kg</span>
+               <input type="text" name="name" id="WeightInputElement" placeholder="0"/>
+               <span class="blueText">kg</span>
+              </div>
+            </div>
+          </div>
+          <div class="parametersImperial hidden">
+            <div class="heightInput">
+              <p>Height</p>
+              <div class="inputContainer">
+               <input type="text" name="name" id="HeightInputElementFt" placeholder="0"/>
+               <span class="blueText ">ft</span>
+               <input type="text" name="name" id="HeightInputElementIn" placeholder="0"/>
+               <span class="blueText ">in</span>
+              </div>
+            </div>
+            <div class="weightInput">
+              <p>Weight</p>
+              <div class="inputContainer">
+               <input type="text" name="name" id="WeightInputElementSt" placeholder="0"/>
+               <span class="blueText">st</span>
+               <input type="text" name="name" id="WeightInputElementLb" placeholder="0"/>
+               <span class="blueText">lb</span>
               </div>
             </div>
           </div>
@@ -116,6 +135,7 @@
             </div> 
           </div>
         </div>
+        <img src="assets/images/image-man-eating.webp" alt="Man Eating" id="manEating">
       </div>
     </main>
 

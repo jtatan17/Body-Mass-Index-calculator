@@ -283,26 +283,15 @@ h4 {
   line-height: 150%; /* 21px */
 }
 
-#resultParagraph span{
+#resultParagraph span {
   font-weight: 600;
 }
 
-.blueTextCM {
+.blueText {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 24px;
   font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  letter-spacing: -1.2px;
-  margin: -46px;
-  color: #345ff6;
-}
-
-.blueTextKG {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 100;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: -1.2px;
   margin: -46px;
@@ -314,16 +303,111 @@ h4 {
   align-items: center;
 }
 
-::placeholder {
-  color: #345ff6;
+#HeightInputElement {
+  color: var(--Gunmetal);
 
   /* Heading M */
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 24px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: -1.2px;
+  padding: 22px;
+}
+
+#WeightInputElement {
+  color: var(--Gunmetal);
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  padding: 22px;
+}
+
+::placeholder {
+  color: var(--gunmetal);
+  align-items: center;
+
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  opacity: 0.25;
+}
+
+.hidden {
+  display: none;
+}
+
+#HeightInputElementFt {
+  color: var(--Gunmetal);
+
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  padding: 22px;
+
+  width: 132px;
+}
+
+#HeightInputElementIn {
+  color: var(--Gunmetal);
+
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  padding: 22px;
+
+  margin-left: 98px;
+
+  width: 132px;
+}
+
+#WeightInputElementSt{
+  color: var(--Gunmetal);
+
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  padding: 22px;
+
+  width: 132px;
+}
+
+#WeightInputElementLb{
+  color: var(--Gunmetal);
+
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  padding: 22px;
+
+  margin-left: 98px;
+
+  width: 132px;
 }
 
 svg {
@@ -367,6 +451,11 @@ svg {
 .circleContainer.active .metricCircleInner,
 .circleContainer.active .imperialCircleInner {
   fill: #345ff6; /* Inner circle color on active */
+}
+
+#manEating{
+  width: 311.17px;
+  margin-top: 64px;
 }
 
 @media (min-width: 768px) {
