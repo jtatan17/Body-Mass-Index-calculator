@@ -378,8 +378,8 @@ h4 {
   width: 132px;
 }
 
-#WeightInputElementSt{
-  color: var(--Gunmetal);
+#WeightInputElementSt {
+  color: var(--gunmetal);
 
   /* Heading M */
   font-family: "Hanken Grotesk", sans-serif;
@@ -393,8 +393,8 @@ h4 {
   width: 132px;
 }
 
-#WeightInputElementLb{
-  color: var(--Gunmetal);
+#WeightInputElementLb {
+  color: var(--gunmetal);
 
   /* Heading M */
   font-family: "Hanken Grotesk", sans-serif;
@@ -453,9 +453,41 @@ svg {
   fill: #345ff6; /* Inner circle color on active */
 }
 
-#manEating{
+#manEating {
   width: 311.17px;
   margin-top: 64px;
+}
+
+article {
+  width: 328px;
+  margin-top: 42px;
+}
+
+article h3 {
+  align-self: stretch;
+  color: var(--Gunmetal);
+  font-family: "Hanken Grotesk", sans-serif;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 35.2px */
+  letter-spacing: -1.6px;
+}
+
+
+
+article p {
+  align-self: stretch;
+  color: var(--darkElectricBlue);
+
+  /* Body M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: 48px;
 }
 
 @media (min-width: 768px) {
