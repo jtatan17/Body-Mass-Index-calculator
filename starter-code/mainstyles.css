@@ -15,6 +15,15 @@
   src: url(assets/fonts/Inter-VariableFont_slntwght.ttf) format("truetype");
 }
 
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
 h1 {
   font-size: 64px;
   font-family: "Hanken Grotesk", sans-serif;
@@ -453,6 +462,14 @@ svg {
   fill: #345ff6; /* Inner circle color on active */
 }
 
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #manEating {
   width: 311.17px;
   margin-top: 64px;
@@ -460,7 +477,8 @@ svg {
 
 article {
   width: 328px;
-  margin-top: 42px;
+  margin-top: 62px;
+  
 }
 
 article h3 {
@@ -475,8 +493,6 @@ article h3 {
   letter-spacing: -1.6px;
 }
 
-
-
 article p {
   align-self: stretch;
   color: var(--darkElectricBlue);
@@ -490,14 +506,186 @@ article p {
   margin-top: 48px;
 }
 
+#advicesSection {
+  position: relative;
+  overflow: hidden;
+  margin-top: 45px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding-bottom: 45px;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+}
+
+#advicesSection div {
+  margin: 56px 28px 0px 19px;
+}
+
+#advicesSection div img {
+  width: 64px;
+}
+
+#advicesSection div h4 {
+  color: var(--gunmetal);
+  /* Heading M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-top: 32px;
+}
+
+#advicesSection div p {
+  color: var(--darkElectricBlue);
+
+  /* Body M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: 24px;
+}
+
+.cardContainer {
+  margin: 72px auto;
+}
+
+.cardElement {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--pureWhite);
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  margin: 16px;
+}
+
+.titleContainer {
+  display: flex;
+  height: 24px;
+  width: 279px;
+}
+
+.titleContainer img {
+  width: 32px;
+}
+
+h5 {
+  color: var(--gunmetal);
+
+  /* Heading S */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-left: 16px;
+}
+
+.cardElement p {
+  color: var(--darkElectricBlue);
+
+  /* Body M */
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
 @media (min-width: 768px) {
-  .div {
-    background-color: blue;
+  .calculatorContainer {
+    margin-top: -370px;
+    width: auto;
   }
+  
+  .parametersMetric {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+  .weightInput {
+    
+    margin-left: 24px;
+  }
+
+  .definitionContainer {
+    width: 100%;
+  }
+
+  .articleContainer {
+    display: flex;
+  }
+
+  .articleContainer img {
+    width: 411.09px;
+    flex-shrink: 0;
+    margin-left: -52px;
+  }
+
+  article p {
+    margin-left: 32px;
+    margin-right: 5px;
+    padding: 10px;
+  }
+  .adviceCard{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .adviceCard img{
+    margin-right: 16px;
+  }
+
+  #advicesSection div{
+    margin: 0px 28px 0px 19px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .articleContainer{
+    width: 100%;
+  }
+  
+  #articletextLimitatons {
+    width: 686px;
+  }
+  #advicesSection {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1024px) {
-  .div {
-    background-color: yellow;
-  }
 }
