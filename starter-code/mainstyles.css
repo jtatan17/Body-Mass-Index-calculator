@@ -251,36 +251,30 @@ h4 {
   background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   margin-top: 24px;
 }
 
-.resultContainer {
-  margin: 32px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-}
 
-.resultContainer p {
+.resultBlock p {
   font-size: 16px;
   font-family: "Hanken Grotesk", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
   color: #fff;
+  padding: 15px;
 }
 #BMI {
   color: var(--pureWhite);
-  font-family: Inter;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 52.8px */
   letter-spacing: -2.4px;
+  padding: 15px 15px 0px 15px;
 }
 
 #resultParagraph {
@@ -290,6 +284,7 @@ h4 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+  padding: 0px 15px 15px 15px;
 }
 
 #resultParagraph span {
@@ -469,7 +464,6 @@ svg {
   align-items: center;
 }
 
-
 #manEating {
   width: 311.17px;
   margin-top: 64px;
@@ -478,7 +472,6 @@ svg {
 article {
   width: 328px;
   margin-top: 62px;
-  
 }
 
 article h3 {
@@ -618,7 +611,7 @@ h5 {
     margin-top: -370px;
     width: auto;
   }
-  
+
   .parametersMetric {
     display: flex;
     justify-content: space-between;
@@ -628,18 +621,133 @@ h5 {
     display: none;
   }
 
-
   .weightInput {
-    
     margin-left: 24px;
+  }
+
+  #weightInputImperial {
+    margin-top: 24px;
+    margin-left: 0px;
+  }
+
+  .weightInput p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    padding: 5px;
+  }
+
+  .parametersImperial input {
+    width: 238px;
   }
 
   .definitionContainer {
     width: 100%;
   }
 
+  #HeightInputElementFt,
+  #HeightInputElementIn,
+  #WeightInputElementSt,
+  #WeightInputElementLb {
+    width: 238px;
+  }
+  .metricsystemContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .toggleContainerImperial {
+    margin-left: 224px;
+  }
+
+  .toggleContainerImperial label {
+    margin-left: 18px;
+  }
+
+  .toggleContainerMetric label {
+    margin-left: 18px;
+  }
+
+  .result {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 106px 999px 999px 106px;
+    background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+    width: 622px;
+    height: 149px;
+    flex-direction: row;
+  }
+
+  .resultBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    height: 85px;
+  }
+  .result p {
+    width: 206px;
+    height: 84px;
+  }
+
+  .resultBlock p {
+    color: var(--pureWhite);
+
+    /* Body M (Bold) */
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    padding: 0px;
+    margin: 0px;
+    height: 20px;
+  }
+
+  #BMI {
+    color: var(--pureWhite);
+
+    /* Body M (Bold) */
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.4px;
+  }
+
+  #resultParagraph {
+    color: var(--pureWhite);
+
+    /* Body S */
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    padding: 0px;
+    margin: 0px;  
+    align-items: center;
+  }
+
+  #resultParagraph span {
+    color: var(--pureWhite);
+
+    /* Body S */
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
   .articleContainer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .articleContainer img {
@@ -648,22 +756,27 @@ h5 {
     margin-left: -52px;
   }
 
-  article p {
-    margin-left: 32px;
-    margin-right: 5px;
-    padding: 10px;
+  .articleContainer article {
+    width: 331px;
   }
-  .adviceCard{
+
+  article p {
+    padding: 10px;
+    height: 240px;
+    width: 331px;
+    margin-top: 32px;
+  }
+  .adviceCard {
     display: flex;
     align-items: center;
     margin-top: 0px;
   }
 
-  .adviceCard img{
+  .adviceCard img {
     margin-right: 16px;
   }
 
-  #advicesSection div{
+  #advicesSection div {
     margin: 0px 28px 0px 19px;
   }
 
@@ -674,17 +787,16 @@ h5 {
     width: 100%;
   }
 
-  .articleContainer{
+  .articleContainer {
     width: 100%;
   }
-  
+
   #articletextLimitatons {
     width: 686px;
   }
   #advicesSection {
     width: 100%;
   }
-
 }
 
 @media (min-width: 1024px) {
